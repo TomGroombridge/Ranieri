@@ -22,7 +22,9 @@ body{
     /*background-color: #525252;*/
     /*background-image: -webkit-radial-gradient(center top,circle cover,rgba(86,86,86,.5),rgba(33, 29, 29, 0.95));*/
     background-color: rgba(38,38,38,0.95); -webkit-font-smoothing: antialiased;
-    height: 1000px;  
+    height: 1000px;
+    color: #5d5d5d;
+  	font-family: "Bell Gothic W01 Black 691900", arial;
 }
 .centered-form{
 	margin-top: 60px;
@@ -33,9 +35,21 @@ body{
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
-p{
-  color: #5d5d5d;
-  font-family: "Bell Gothic W01 Black 691900", arial;
+p{  
   margin-right: 5px;
   font-size: 17px;
+}
+
+.navbar-default{
+	background-color: #e0ddda;
+	border-bottom: 2px solid #691C1C;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+
+.btn-maroon{
+  color: #ffffff;
+  background-color: #691C1C;
 }

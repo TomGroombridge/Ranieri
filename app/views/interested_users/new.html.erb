@@ -1,29 +1,37 @@
-<div class="container">	
-  <div class="row centered-form">
+<div class="container" style="background-color: #e0ddda; border: 3px solid #691C1C; padding-bottom: 15px;">	
+	<h1>Bulldog Spirit</h1>
+
+	<p>Over in America Fantasy Football is a hugely growing market. When you land on one of their websites you are greeted with enough information to make any self respecting Brit turn off the computer and put the kettle on.</p>
+
+	<p>Here at NewCo we our proud of out British heritage and simplicity. Unlike our American cousins we don’t always think that bigger is better, we aren’t here to throw hundreds of competitions laced with enough statistical data to make you feel like you are sitting a test. We want to make the fantasy experience one us brits can be proud of. </p>
+
+	<p>Owing to the typical British snobbery we have inherited from our forefathers we believe we can do a better job than our Cousins across the pond.</p>
+
+	<p>Our first goal is to have a free tournament live for the Euro’s… If you are interested in our journey and would like a nudge on the shoulder when we are ready for our first competition then please register your interest by clicking the button below.</p>
+
+
+	<div class="row centered-form">
     <div class="col-md-8 col-sm-offset-2 col-md-offset-2">
-    	<div class="panel panel-default">    		    		
-	 			<div class="panel-body">
-	    		<h3>Register Interest</h3>
-	    		<%= form_for @new_user do |form| %>
+    	<div class="">    		    		
+	 			<div class="">
+					<%= form_for @new_user do |form| %>
 						<div class="row">
-	    				<div class="col-xs-6 col-sm-6 col-md-6">
-	    					<div class="form-group">	
-									<%= form.text_field :first_name, :class => "form-control input-sm", :placeholder => "First Name" %>
+						<div class="col-xs-12 col-sm-8 col-md-9">
+							<div class="form-group">	
+									<%= form.text_field :email, :class => "form-control input-sm", :placeholder => "Email Address", :style => "height: 35px;" %>									
 								</div>
-	    				</div>
-							<div class="col-xs-6 col-sm-6 col-md-6">
-	    					<div class=form"-group">
-									<%= form.text_field :last_name, :class => "form-control input-sm", :placeholder => "Last Name" %>
+						</div>
+							<div class="col-xs-12 col-sm-4 col-md-3">
+							<div class=form"-group">
+									<%= form.submit "Register" , :class => "btn btn-maroon btn-block" %>									
 								</div>
 							</div>
 						</div>	
 						<div class="form-group">	
-							<%= form.text_field :email, :class => "form-control input-sm", :placeholder => "Email Address" %>
 						</div>					
-						<%= form.submit "Register" , :class => "btn btn-info btn-block" %>
 					<% end %>	
-	    	</div>
-  		</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</div>	
 </div>
