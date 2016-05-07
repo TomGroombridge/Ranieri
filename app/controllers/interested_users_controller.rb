@@ -7,14 +7,14 @@ class InterestedUsersController < ApplicationController
 	def create
 		@new_user = InterestedUser.new(interested_user_params)
 		if @new_user.save
-			render :confirmation
+			@user	= @new_user
+			render :show
 		else
 			render :new
 		end
 	end
 
-	def confirmation
-		raise @user.inspect
+	def show		
 		@user = InterestedUser.find(params[:id])		
 	end
 
