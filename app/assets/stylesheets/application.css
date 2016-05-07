@@ -14,10 +14,14 @@
  *= require_self
  */
 
+html{
+	height: 100%;
+}
 
 body{
     /*background-color: #525252;*/
-    background-image: -webkit-radial-gradient(center top,circle cover,rgba(86,86,86,.5),rgba(0,0,0,.48));
+    /*background-image: -webkit-radial-gradient(center top,circle cover,rgba(86,86,86,.5),rgba(33, 29, 29, 0.95));*/
+    background-color: rgba(38,38,38,0.95); -webkit-font-smoothing: antialiased;
     height: 1000px;  
 }
 .centered-form{
@@ -27,4 +31,11 @@ body{
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+p{
+  color: #5d5d5d;
+  font-family: "Bell Gothic W01 Black 691900", arial;
+  margin-right: 5px;
+  font-size: 17px;
 }
